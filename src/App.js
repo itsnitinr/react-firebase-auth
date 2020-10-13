@@ -5,6 +5,7 @@ import { AuthProvider } from "./contexts/AuthContext";
 import Signup from "./components/Signup.component";
 import Login from "./components/Login.component";
 import Dashboard from "./components/Dashboard.component";
+import PrivateRoute from "./components/PrivateRoute.component";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => (
@@ -16,7 +17,7 @@ const App = () => (
       <Router>
         <AuthProvider>
           <Switch>
-            <Route exact path="/" component={Dashboard} />
+            <PrivateRoute exact path="/" component={Dashboard} />
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />
           </Switch>
