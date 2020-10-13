@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AuthProvider } from "./contexts/AuthContext";
 import Signup from "./components/Signup.component";
+import Login from "./components/Login.component";
 import Dashboard from "./components/Dashboard.component";
 import "bootstrap/dist/css/bootstrap.min.css";
 
