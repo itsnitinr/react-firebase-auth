@@ -7,6 +7,7 @@ import Login from "./components/Login.component";
 import Dashboard from "./components/Dashboard.component";
 import PrivateRoute from "./components/PrivateRoute.component";
 import ForgotPassword from "./components/ForgotPassword.component";
+import UpdateProfile from "./components/UpdateProfile.component";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => (
@@ -19,6 +20,7 @@ const App = () => (
         <AuthProvider>
           <Switch>
             <PrivateRoute exact path="/" component={Dashboard} />
+            <PrivateRoute path="/update-profile" component={UpdateProfile} />
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />
             <Route path="/forgot-password" component={ForgotPassword} />
